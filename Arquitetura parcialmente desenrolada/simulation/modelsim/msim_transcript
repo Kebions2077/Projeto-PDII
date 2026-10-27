@@ -1,0 +1,163 @@
+# Reading E:/modelsim/modelsim_ase/tcl/vsim/pref.tcl 
+# do SimonUnrolled_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying E:\modelsim\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied E:\modelsim\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {F:/av1/Projeto-PDII/Arquitetura parcialmente desenrolada/top_simon_unrolled.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity top_simon_unrolled
+# -- Compiling architecture rtl of top_simon_unrolled
+# ** Error: (vcom-11) Could not find work.simon_unrolled.
+# 
+# ** Error: F:/av1/Projeto-PDII/Arquitetura parcialmente desenrolada/top_simon_unrolled.vhd(27): (vcom-1195) Cannot find expanded name "work.simon_unrolled".
+# 
+# ** Error: F:/av1/Projeto-PDII/Arquitetura parcialmente desenrolada/top_simon_unrolled.vhd(27): Unknown expanded name.
+# ** Error: F:/av1/Projeto-PDII/Arquitetura parcialmente desenrolada/top_simon_unrolled.vhd(39): VHDL Compiler exiting
+# ** Error: E:/modelsim/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./SimonUnrolled_run_msim_rtl_vhdl.do line 8
+# E:/modelsim/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {F:/av1/Projeto-PDII/Arquitetura parcialmente desenrolada/top_simon_unrolled.vhd}"
+vlib work
+vcom simon_round.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# ** Error: (vcom-7) Failed to open design unit file "simon_round.vhd" in read mode.
+# 
+# No such file or directory. (errno = ENOENT)
+# E:/modelsim/modelsim_ase/win32aloem/vcom failed.
+vcom simon_key_schedule.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# ** Error: (vcom-7) Failed to open design unit file "simon_key_schedule.vhd" in read mode.
+# 
+# No such file or directory. (errno = ENOENT)
+# E:/modelsim/modelsim_ase/win32aloem/vcom failed.
+vcom simon_4rounds.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# ** Error: (vcom-7) Failed to open design unit file "simon_4rounds.vhd" in read mode.
+# 
+# No such file or directory. (errno = ENOENT)
+# E:/modelsim/modelsim_ase/win32aloem/vcom failed.
+vcom simon_unrolled.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# ** Error: (vcom-7) Failed to open design unit file "simon_unrolled.vhd" in read mode.
+# 
+# No such file or directory. (errno = ENOENT)
+# E:/modelsim/modelsim_ase/win32aloem/vcom failed.
+vcom tb_simon_unrolled.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# ** Error: (vcom-7) Failed to open design unit file "tb_simon_unrolled.vhd" in read mode.
+# 
+# No such file or directory. (errno = ENOENT)
+# E:/modelsim/modelsim_ase/win32aloem/vcom failed.
+vsim work.tb_simon_unrolled
+# vsim work.tb_simon_unrolled 
+# ** Error: (vsim-3170) Could not find 'F:/av1/Projeto-PDII/Arquitetura parcialmente desenrolada/simulation/modelsim/rtl_work.tb_simon_unrolled'.
+# 
+# Error loading design
+add wave *
+run -all
+# No Design Loaded!
+cd "F:/av1/Projeto-PDII/Arquitetura parcialmente desenrolada"
+# reading E:\modelsim\modelsim_ase\win32aloem/../modelsim.ini
+pwd
+# F:/av1/Projeto-PDII/Arquitetura parcialmente desenrolada
+dir
+#  Volume in drive F is Disco III
+#  Volume Serial Number is F65C-25EC
+# 
+#  Directory of F:\av1\Projeto-PDII\Arquitetura parcialmente desenrolada
+# 
+# 27/10/2026  15:24    <DIR>          .
+# 27/10/2026  15:13    <DIR>          ..
+# 27/10/2026  15:24    <DIR>          db
+# 27/10/2026  15:20    <DIR>          incremental_db
+# 27/10/2026  15:20    <DIR>          output_files
+# 27/10/2026  15:18             1.283 SimonUnrolled.qpf
+# 27/10/2026  15:22             3.144 SimonUnrolled.qsf
+# 27/10/2026  15:24               878 SimonUnrolled_nativelink_simulation.rpt
+# 27/10/2026  15:20             1.542 simon_4rounds.vhd
+# 27/10/2026  15:13                 0 simon_4rounds.vhd.bak
+# 27/10/2026  15:20             2.031 simon_key_schedule.vhd
+# 27/10/2026  15:14                 0 simon_key_schedule.vhd.bak
+# 27/10/2026  15:20               997 simon_round.vhd
+# 27/10/2026  15:13                 0 simon_round.vhd.bak
+# 27/10/2026  15:20             3.143 simon_unrolled.vhd
+# 27/10/2026  15:14                 0 simon_unrolled.vhd.bak
+# 27/10/2026  15:20    <DIR>          simulation
+# 27/10/2026  15:20             1.918 tb_simon_unrolled.vhd
+# 27/10/2026  15:15                 0 tb_simon_unrolled.vhd.bak
+# 27/10/2026  15:20               990 top_simon_unrolled.vhd
+# 27/10/2026  15:14                 0 top_simon_unrolled.vhd.bak
+#               15 File(s)         15.926 bytes
+#                6 Dir(s)  997.725.167.616 bytes free
+vlib work
+vcom simon_round.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity simon_round
+# -- Compiling architecture rtl of simon_round
+vcom simon_key_schedule.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity simon_key_schedule
+# -- Compiling architecture rtl of simon_key_schedule
+vcom simon_4rounds.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity simon_4rounds
+# -- Compiling architecture structural of simon_4rounds
+# -- Loading package NUMERIC_STD
+# -- Loading entity simon_round
+vcom simon_unrolled.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity simon_unrolled
+# -- Compiling architecture rtl of simon_unrolled
+# -- Loading package NUMERIC_STD
+# -- Loading entity simon_key_schedule
+# -- Loading entity simon_4rounds
+vcom tb_simon_unrolled.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_simon_unrolled
+# -- Compiling architecture simulacao of tb_simon_unrolled
+# -- Loading entity simon_unrolled
+vsim work.tb_simon_unrolled
+# vsim work.tb_simon_unrolled 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_simon_unrolled(simulacao)
+# Loading ieee.numeric_std(body)
+# Loading work.simon_unrolled(rtl)
+# Loading work.simon_key_schedule(rtl)
+# Loading work.simon_4rounds(structural)
+# Loading work.simon_round(rtl)
+add wave *
+run -all
+# ** Note: SUCESSO: SIMON-64/128 desenrolado em 4 validado.
+#    Time: 156 ns  Iteration: 0  Instance: /tb_simon_unrolled
+# Break key hit 
+# Break in Process line__61 at simon_unrolled.vhd line 61

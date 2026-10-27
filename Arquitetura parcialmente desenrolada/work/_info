@@ -1,0 +1,190 @@
+m255
+K3
+13
+cModel Technology
+Z0 dF:\av1\Projeto-PDII\Arquitetura parcialmente desenrolada
+Esimon_4rounds
+Z1 w1793125213
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dF:\av1\Projeto-PDII\Arquitetura parcialmente desenrolada
+Z5 8simon_4rounds.vhd
+Z6 Fsimon_4rounds.vhd
+l0
+L5
+VNIM`1Ab72oM_e>9:hP2zC3
+Z7 OV;C;10.1d;51
+32
+Z8 !s108 1793125523.644000
+Z9 !s90 -reportprogress|300|simon_4rounds.vhd|
+Z10 !s107 simon_4rounds.vhd|
+o-O0
+Z11 tExplicit 1
+!s100 FzBVZ_@:XVdeAdERX_f]i3
+!i10b 1
+Astructural
+Z12 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z13 DEx4 work 11 simon_round 0 22 zmC0N1XII8X:bjlWf?UBV1
+R2
+R3
+Z14 DEx4 work 13 simon_4rounds 0 22 NIM`1Ab72oM_e>9:hP2zC3
+l20
+L15
+VHKgYhz8>j^a12JkfbEQQB3
+R7
+32
+R8
+R9
+R10
+o-O0
+R11
+!s100 :8J>?hJNWh_<a`n45NTF03
+!i10b 1
+Esimon_key_schedule
+Z15 w1793125215
+R12
+R2
+R3
+R4
+Z16 8simon_key_schedule.vhd
+Z17 Fsimon_key_schedule.vhd
+l0
+L6
+V[_^`CQ@9B[`<k;Tn]2;Io2
+R7
+32
+Z18 !s108 1793125523.404000
+Z19 !s90 -reportprogress|300|simon_key_schedule.vhd|
+Z20 !s107 simon_key_schedule.vhd|
+o-O0
+R11
+!s100 dCU>gj4NZl<5ZZ7mDF_R51
+!i10b 1
+Artl
+R12
+R2
+R3
+Z21 DEx4 work 18 simon_key_schedule 0 22 [_^`CQ@9B[`<k;Tn]2;Io2
+l29
+L13
+V1HHk4m;EYOXCV_DlTo=fV3
+R7
+32
+R18
+R19
+R20
+o-O0
+R11
+!s100 B21Q@2SLZdhP>8QE8iX`50
+!i10b 1
+Esimon_round
+Z22 w1793125217
+R12
+R2
+R3
+R4
+Z23 8simon_round.vhd
+Z24 Fsimon_round.vhd
+l0
+L6
+VzmC0N1XII8X:bjlWf?UBV1
+R7
+32
+Z25 !s108 1793125522.722000
+Z26 !s90 -reportprogress|300|simon_round.vhd|
+Z27 !s107 simon_round.vhd|
+o-O0
+R11
+!s100 LIY2jCkW][MVcUB^cbd0N2
+!i10b 1
+Artl
+R12
+R2
+R3
+R13
+l32
+L16
+VW9A=A[KF<^9o>QhiQ8S2a0
+R7
+32
+R25
+R26
+R27
+o-O0
+R11
+!s100 `26Z>l2mm8gU9_BW`g93A2
+!i10b 1
+Esimon_unrolled
+Z28 w1793125211
+R2
+R3
+R4
+Z29 8simon_unrolled.vhd
+Z30 Fsimon_unrolled.vhd
+l0
+L5
+VDP15m`^5cEI6jgDCT@<EI2
+R7
+32
+Z31 !s108 1793125523.932000
+Z32 !s90 -reportprogress|300|simon_unrolled.vhd|
+Z33 !s107 simon_unrolled.vhd|
+o-O0
+R11
+!s100 94]O2`V<?Hz6IL8[7RzU`2
+!i10b 1
+Artl
+R14
+R12
+R21
+R2
+R3
+Z34 DEx4 work 14 simon_unrolled 0 22 DP15m`^5cEI6jgDCT@<EI2
+l34
+L18
+V9I]MPEV<<J4Z6aLLOON3B1
+R7
+32
+R31
+R32
+R33
+o-O0
+R11
+!s100 0]QnQcPz61[eH^[[GMhKX2
+!i10b 1
+Etb_simon_unrolled
+Z35 w1793125205
+R2
+R3
+R4
+Z36 8tb_simon_unrolled.vhd
+Z37 Ftb_simon_unrolled.vhd
+l0
+L5
+V8EE@o2?R>FD7I`?ej;4g?3
+!s100 NOT22okSXPm_E?F;[eRCe1
+R7
+32
+!i10b 1
+Z38 !s108 1793125524.230000
+Z39 !s90 -reportprogress|300|tb_simon_unrolled.vhd|
+Z40 !s107 tb_simon_unrolled.vhd|
+o-O0
+R11
+Asimulacao
+R34
+R2
+R3
+DEx4 work 17 tb_simon_unrolled 0 22 8EE@o2?R>FD7I`?ej;4g?3
+l27
+L8
+Vb_9GHI^C[H=0:4i:P<m@R0
+!s100 k?QL_`mcjFEh5T_ELn9;E0
+R7
+32
+!i10b 1
+R38
+R39
+R40
+o-O0
+R11
