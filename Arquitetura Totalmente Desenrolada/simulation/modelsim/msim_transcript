@@ -91,3 +91,5 @@ add wave *
 run -all
 # ** Note: SUCESSO: SIMON-64/128 totalmente desenrolado validado.
 #    Time: 56 ns  Iteration: 0  Instance: /tb_simon_fully_unrolled
+# Break key hit 
+# Simulation stop requested.
