@@ -1,0 +1,111 @@
+#ifndef TEST_VECTORS_H
+#define TEST_VECTORS_H
+
+#include <stdint.h>
+
+
+typedef struct {
+    const char *name;
+    uint16_t key_high;
+    uint64_t key_low;
+    uint64_t plaintext;
+} present_test_vector_t;
+
+
+typedef struct {
+    const char *name;
+    uint32_t key_k3;
+    uint32_t key_k2;
+    uint32_t key_k1;
+    uint32_t key_k0;
+    uint32_t plaintext_x;
+    uint32_t plaintext_y;
+} simon_test_vector_t;
+
+
+static const present_test_vector_t PRESENT_VECTORS[] = {
+
+    {
+        "PRESENT_ZERO",
+        0x0000,
+        0x0000000000000000ULL,
+        0x0000000000000000ULL
+    },
+
+    {
+        "PRESENT_ALL_ONES",
+        0xFFFF,
+        0xFFFFFFFFFFFFFFFFULL,
+        0xFFFFFFFFFFFFFFFFULL
+    },
+
+    {
+        "PRESENT_ZERO_KEY_ONE_PLAIN",
+        0x0000,
+        0x0000000000000000ULL,
+        0xFFFFFFFFFFFFFFFFULL
+    },
+
+    {
+        "PRESENT_ONE_KEY_ZERO_PLAIN",
+        0xFFFF,
+        0xFFFFFFFFFFFFFFFFULL,
+        0x0000000000000000ULL
+    }
+
+};
+
+
+#define PRESENT_VECTOR_COUNT \
+    (sizeof(PRESENT_VECTORS) / sizeof(PRESENT_VECTORS[0]))
+
+
+static const simon_test_vector_t SIMON_VECTORS[] = {
+
+    {
+        "SIMON_ZERO",
+        0x00000000,
+        0x00000000,
+        0x00000000,
+        0x00000000,
+        0x00000000,
+        0x00000000
+    },
+
+    {
+        "SIMON_ALL_ONES",
+        0xFFFFFFFF,
+        0xFFFFFFFF,
+        0xFFFFFFFF,
+        0xFFFFFFFF,
+        0xFFFFFFFF,
+        0xFFFFFFFF
+    },
+
+    {
+        "SIMON_ZERO_KEY_ONE_PLAIN",
+        0x00000000,
+        0x00000000,
+        0x00000000,
+        0x00000000,
+        0xFFFFFFFF,
+        0xFFFFFFFF
+    },
+
+    {
+        "SIMON_ONE_KEY_ZERO_PLAIN",
+        0xFFFFFFFF,
+        0xFFFFFFFF,
+        0xFFFFFFFF,
+        0xFFFFFFFF,
+        0x00000000,
+        0x00000000
+    }
+
+};
+
+
+#define SIMON_VECTOR_COUNT \
+    (sizeof(SIMON_VECTORS) / sizeof(SIMON_VECTORS[0]))
+
+#endif
