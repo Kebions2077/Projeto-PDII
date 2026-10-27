@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Oct 27 17:11:16 2026
+Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Web Edition
+Revision Name : Bitserial
+Top-level Entity Name : top_simon_bitserial
+Family : Cyclone III
+Total logic elements : 14
+    Total combinational functions : 14
+    Dedicated logic registers : 8
+Total registers : 8
+Total pins : 5
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

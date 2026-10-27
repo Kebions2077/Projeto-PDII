@@ -1,0 +1,190 @@
+m255
+K3
+13
+cModel Technology
+Z0 dF:\av1\Projeto-PDII\Arquiteturas\Arquitetura Bitserial
+Esimon_bitserial
+Z1 w1793131740
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dF:\av1\Projeto-PDII\Arquiteturas\Arquitetura Bitserial
+Z6 8simon_bitserial.vhd
+Z7 Fsimon_bitserial.vhd
+l0
+L6
+V@gdc?mMNA9L_n>?a:8h9]2
+Z8 OV;C;10.1d;51
+32
+Z9 !s108 1793132082.106000
+Z10 !s90 -reportprogress|300|simon_bitserial.vhd|
+Z11 !s107 simon_bitserial.vhd|
+o-O0
+Z12 tExplicit 1
+!s100 UQWm8KAPS?9hS:LFfEn_C3
+!i10b 1
+Artl
+Z13 DEx4 work 11 simon_round 0 22 @CDXX^fL;6z7P0b=HNJ071
+Z14 DEx4 work 18 simon_key_schedule 0 22 V3abG;haMiP6m2C^m]_2z0
+R2
+R3
+R4
+Z15 DEx4 work 15 simon_bitserial 0 22 @gdc?mMNA9L_n>?a:8h9]2
+l34
+L19
+V@g>Y0TD`B@;P>`oCLB7B=1
+R8
+32
+R9
+R10
+R11
+o-O0
+R12
+!s100 ORhDRQBoBZFT0M7569f`10
+!i10b 1
+Esimon_key_schedule
+Z16 w1793131731
+R2
+R3
+R4
+R5
+Z17 8simon_key_schedule.vhd
+Z18 Fsimon_key_schedule.vhd
+l0
+L6
+VV3abG;haMiP6m2C^m]_2z0
+R8
+32
+Z19 !s108 1793132081.905000
+Z20 !s90 -reportprogress|300|simon_key_schedule.vhd|
+Z21 !s107 simon_key_schedule.vhd|
+o-O0
+R12
+!s100 Eg?YDDfDTRK7^H[:zDaK^3
+!i10b 1
+Artl
+R2
+R3
+R4
+R14
+l21
+L13
+VBz;4>Cn1_RIQ59FoP^Ml20
+R8
+32
+R19
+R20
+R21
+o-O0
+R12
+!s100 MHJ44[ec`H`;egh[7j6am1
+!i10b 1
+Esimon_round
+Z22 w1793131873
+R3
+R4
+R5
+Z23 8simon_round.vhd
+Z24 Fsimon_round.vhd
+l0
+L5
+V@CDXX^fL;6z7P0b=HNJ071
+R8
+32
+Z25 !s108 1793132079.423000
+Z26 !s90 -reportprogress|300|simon_round.vhd|
+Z27 !s107 simon_round.vhd|
+o-O0
+R12
+!s100 Z:nfc^>_QiIOlQg5N3J:J1
+!i10b 1
+Artl
+R3
+R4
+R13
+l20
+L15
+V=Ke9_nca<Z`MJ[VAzlNP[2
+R8
+32
+R25
+R26
+R27
+o-O0
+R12
+!s100 71zo1i;Fn_>_7YgT_9bUk0
+!i10b 1
+Etb_simon_bitserial
+Z28 w1793131751
+R3
+R4
+R5
+Z29 8tb_simon_bitserial.vhd
+Z30 Ftb_simon_bitserial.vhd
+l0
+L5
+VL=ej6Kca9mMJ2^zVL;n3k1
+!s100 <]kgh<BLdMNonaUkOTWR03
+R8
+32
+!i10b 1
+Z31 !s108 1793132082.592000
+Z32 !s90 -reportprogress|300|tb_simon_bitserial.vhd|
+Z33 !s107 tb_simon_bitserial.vhd|
+o-O0
+R12
+Asimulacao
+R2
+R15
+R3
+R4
+DEx4 work 18 tb_simon_bitserial 0 22 L=ej6Kca9mMJ2^zVL;n3k1
+l19
+L8
+V>XFTh22L:NzL4`AeI19443
+!s100 `Z7V4nC2QW]j1oKNbY3Z52
+R8
+32
+!i10b 1
+R31
+R32
+R33
+o-O0
+R12
+Etop_simon_bitserial
+Z34 w1793131745
+R3
+R4
+R5
+Z35 8top_simon_bitserial.vhd
+Z36 Ftop_simon_bitserial.vhd
+l0
+L5
+VF3ibNmobW[3aU:ASg<<de0
+R8
+32
+Z37 !s108 1793132082.336000
+Z38 !s90 -reportprogress|300|top_simon_bitserial.vhd|
+Z39 !s107 top_simon_bitserial.vhd|
+o-O0
+R12
+!s100 G]DhVoW@VGjHPKjF35WJB1
+!i10b 1
+Artl
+R2
+R15
+R3
+R4
+DEx4 work 19 top_simon_bitserial 0 22 F3ibNmobW[3aU:ASg<<de0
+l23
+L15
+VJNT2>b=SHY]k?Zjf`Q[;33
+R8
+32
+R37
+R38
+R39
+o-O0
+R12
+!s100 ANSa57^Z<Q^33j;<2A@j:2
+!i10b 1

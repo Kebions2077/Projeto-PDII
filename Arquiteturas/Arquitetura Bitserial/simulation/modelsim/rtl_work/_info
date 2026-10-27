@@ -1,0 +1,153 @@
+m255
+K3
+13
+cModel Technology
+Z0 dF:\av1\Projeto-PDII\Arquiteturas\Arquitetura Bitserial\simulation\modelsim
+Esimon_bitserial
+Z1 w1793131740
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dF:\av1\Projeto-PDII\Arquiteturas\Arquitetura Bitserial\simulation\modelsim
+Z6 8F:/av1/Projeto-PDII/Arquiteturas/Arquitetura Bitserial/simon_bitserial.vhd
+Z7 FF:/av1/Projeto-PDII/Arquiteturas/Arquitetura Bitserial/simon_bitserial.vhd
+l0
+L6
+V=n?<2X2]JE8nf7=17m[aN1
+Z8 OV;C;10.1d;51
+31
+Z9 !s108 1793131959.934000
+Z10 !s90 -reportprogress|300|-93|-work|work|F:/av1/Projeto-PDII/Arquiteturas/Arquitetura Bitserial/simon_bitserial.vhd|
+Z11 !s107 F:/av1/Projeto-PDII/Arquiteturas/Arquitetura Bitserial/simon_bitserial.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+!s100 UQWm8KAPS?9hS:LFfEn_C3
+!i10b 1
+Artl
+Z14 DEx4 work 11 simon_round 0 22 hk19:nVF>Pz[2Cif_5WCX1
+Z15 DEx4 work 18 simon_key_schedule 0 22 mB0KzTRLWULaD>eCBi9n;3
+R2
+R3
+R4
+Z16 DEx4 work 15 simon_bitserial 0 22 =n?<2X2]JE8nf7=17m[aN1
+l34
+L19
+VBAkNXnO]FTJ1Vb5L:53af3
+R8
+31
+R9
+R10
+R11
+R12
+R13
+!s100 ORhDRQBoBZFT0M7569f`10
+!i10b 1
+Esimon_key_schedule
+Z17 w1793131731
+R2
+R3
+R4
+R5
+Z18 8F:/av1/Projeto-PDII/Arquiteturas/Arquitetura Bitserial/simon_key_schedule.vhd
+Z19 FF:/av1/Projeto-PDII/Arquiteturas/Arquitetura Bitserial/simon_key_schedule.vhd
+l0
+L6
+VmB0KzTRLWULaD>eCBi9n;3
+R8
+31
+Z20 !s108 1793131959.697000
+Z21 !s90 -reportprogress|300|-93|-work|work|F:/av1/Projeto-PDII/Arquiteturas/Arquitetura Bitserial/simon_key_schedule.vhd|
+Z22 !s107 F:/av1/Projeto-PDII/Arquiteturas/Arquitetura Bitserial/simon_key_schedule.vhd|
+R12
+R13
+!s100 Eg?YDDfDTRK7^H[:zDaK^3
+!i10b 1
+Artl
+R2
+R3
+R4
+R15
+l21
+L13
+V7]UoeRUae8U7:d>_:Xj0W2
+R8
+31
+R20
+R21
+R22
+R12
+R13
+!s100 MHJ44[ec`H`;egh[7j6am1
+!i10b 1
+Esimon_round
+Z23 w1793131873
+R3
+R4
+R5
+Z24 8F:/av1/Projeto-PDII/Arquiteturas/Arquitetura Bitserial/simon_round.vhd
+Z25 FF:/av1/Projeto-PDII/Arquiteturas/Arquitetura Bitserial/simon_round.vhd
+l0
+L5
+Vhk19:nVF>Pz[2Cif_5WCX1
+R8
+31
+Z26 !s108 1793131959.404000
+Z27 !s90 -reportprogress|300|-93|-work|work|F:/av1/Projeto-PDII/Arquiteturas/Arquitetura Bitserial/simon_round.vhd|
+Z28 !s107 F:/av1/Projeto-PDII/Arquiteturas/Arquitetura Bitserial/simon_round.vhd|
+R12
+R13
+!s100 Z:nfc^>_QiIOlQg5N3J:J1
+!i10b 1
+Artl
+R3
+R4
+R14
+l20
+L15
+V5KB@8I]jj2JT:J`UPl5[C0
+R8
+31
+R26
+R27
+R28
+R12
+R13
+!s100 71zo1i;Fn_>_7YgT_9bUk0
+!i10b 1
+Etop_simon_bitserial
+Z29 w1793131745
+R3
+R4
+R5
+Z30 8F:/av1/Projeto-PDII/Arquiteturas/Arquitetura Bitserial/top_simon_bitserial.vhd
+Z31 FF:/av1/Projeto-PDII/Arquiteturas/Arquitetura Bitserial/top_simon_bitserial.vhd
+l0
+L5
+Vnl_]gPZ@_96=8QJP5?:P91
+!s100 G]DhVoW@VGjHPKjF35WJB1
+R8
+31
+!i10b 1
+Z32 !s108 1793131960.164000
+Z33 !s90 -reportprogress|300|-93|-work|work|F:/av1/Projeto-PDII/Arquiteturas/Arquitetura Bitserial/top_simon_bitserial.vhd|
+Z34 !s107 F:/av1/Projeto-PDII/Arquiteturas/Arquitetura Bitserial/top_simon_bitserial.vhd|
+R12
+R13
+Artl
+R2
+R16
+R3
+R4
+DEx4 work 19 top_simon_bitserial 0 22 nl_]gPZ@_96=8QJP5?:P91
+l23
+L15
+VVAazIdlBAQ]YefkIOIZoB1
+!s100 ANSa57^Z<Q^33j;<2A@j:2
+R8
+31
+!i10b 1
+R32
+R33
+R34
+R12
+R13
