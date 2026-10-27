@@ -7,20 +7,14 @@ entity top_simon is
         clk   : in  std_logic;
         reset : in  std_logic;
         start : in  std_logic;
-        busy  : out std_logic;
-        done  : out std_logic
+        plaintext  : in  std_logic_vector(63 downto 0);
+        master_key : in  std_logic_vector(127 downto 0);
+        ciphertext : out std_logic_vector(63 downto 0);
+        busy, done  : out std_logic
     );
 end entity top_simon;
 
 architecture rtl of top_simon is
-
-    constant CHAVE : std_logic_vector(127 downto 0) :=
-        x"1B1A1918131211100B0A090803020100";
-
-    constant TEXTO : std_logic_vector(63 downto 0) :=
-        x"656B696C20646E75";
-
-    signal resultado : std_logic_vector(63 downto 0);
 
 begin
 
@@ -29,9 +23,9 @@ begin
             clk        => clk,
             reset      => reset,
             start      => start,
-            plaintext  => TEXTO,
-            master_key => CHAVE,
-            ciphertext => resultado,
+            plaintext  => plaintext,
+            master_key => master_key,
+            ciphertext => ciphertext,
             busy       => busy,
             done       => done
         );
