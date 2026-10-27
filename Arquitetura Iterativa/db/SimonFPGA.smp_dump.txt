@@ -1,0 +1,6 @@
+
+State Machine - |top_simon|simon_iterative:SIMON_CORE|state
+Name state.RUN state.WAIT_KEY state.IDLE 
+state.IDLE 0 0 0 
+state.WAIT_KEY 0 1 1 
+state.RUN 1 0 1 

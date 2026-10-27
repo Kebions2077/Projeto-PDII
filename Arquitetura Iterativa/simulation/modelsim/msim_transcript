@@ -1,0 +1,170 @@
+# Reading E:/modelsim/modelsim_ase/tcl/vsim/pref.tcl 
+# do SimonFPGA_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying E:\modelsim\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied E:\modelsim\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {F:/av1/Projeto-PDII/Arquitetura Iterativa/simon_key_schedule.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity simon_key_schedule
+# -- Compiling architecture rtl of simon_key_schedule
+# vcom -93 -work work {F:/av1/Projeto-PDII/Arquitetura Iterativa/Simon_Round.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity simon_round
+# -- Compiling architecture Behavioral of simon_round
+# vcom -93 -work work {F:/av1/Projeto-PDII/Arquitetura Iterativa/simon_iterative.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity simon_iterative
+# -- Compiling architecture rtl of simon_iterative
+# -- Loading entity simon_key_schedule
+# -- Loading entity simon_round
+# vcom -93 -work work {F:/av1/Projeto-PDII/Arquitetura Iterativa/top_simon.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity top_simon
+# -- Compiling architecture rtl of top_simon
+# -- Loading package NUMERIC_STD
+# -- Loading entity simon_iterative
+# 
+vlib work
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+vcom simon_round.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# ** Error: (vcom-7) Failed to open design unit file "simon_round.vhd" in read mode.
+# 
+# No such file or directory. (errno = ENOENT)
+# E:/modelsim/modelsim_ase/win32aloem/vcom failed.
+vcom simon_key_schedule.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# ** Error: (vcom-7) Failed to open design unit file "simon_key_schedule.vhd" in read mode.
+# 
+# No such file or directory. (errno = ENOENT)
+# E:/modelsim/modelsim_ase/win32aloem/vcom failed.
+vcom simon_iterative.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# ** Error: (vcom-7) Failed to open design unit file "simon_iterative.vhd" in read mode.
+# 
+# No such file or directory. (errno = ENOENT)
+# E:/modelsim/modelsim_ase/win32aloem/vcom failed.
+vcom tb_simon_iterative.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# ** Error: (vcom-7) Failed to open design unit file "tb_simon_iterative.vhd" in read mode.
+# 
+# No such file or directory. (errno = ENOENT)
+# E:/modelsim/modelsim_ase/win32aloem/vcom failed.
+vsim work.tb_simon_iterative
+# vsim work.tb_simon_iterative 
+# ** Error: (vsim-3170) Could not find 'F:/av1/Projeto-PDII/Arquitetura Iterativa/simulation/modelsim/rtl_work.tb_simon_iterative'.
+# 
+# Error loading design
+add wave *
+run -all
+# No Design Loaded!
+cd "F:/av1/Projeto-PDII/Arquitetura Iterativa"
+# reading E:\modelsim\modelsim_ase\win32aloem/../modelsim.ini
+dir
+#  Volume in drive F is Disco III
+#  Volume Serial Number is F65C-25EC
+# 
+#  Directory of F:\av1\Projeto-PDII\Arquitetura Iterativa
+# 
+# 27/10/2026  13:15    <DIR>          .
+# 27/10/2026  13:14    <DIR>          ..
+# 27/10/2026  13:23    <DIR>          db
+# 27/10/2026  12:24    <DIR>          incremental_db
+# 27/10/2026  13:23    <DIR>          output_files
+# 27/10/2026  12:26           215.727 RTL_implementa‡ao_rodada.jpg
+# 27/10/2026  00:19             1.376 SimonFPGA.qpf
+# 27/10/2026  13:22             3.897 SimonFPGA.qsf
+# 27/10/2026  13:06                 0 SimonFPGA_description.txt
+# 27/10/2026  13:23             1.004 SimonFPGA_nativelink_simulation.rpt
+# 27/10/2026  13:22             3.689 simon_iterative.vhd
+# 27/10/2026  12:48                 0 simon_iterative.vhd.bak
+# 27/10/2026  13:22             3.068 simon_key_schedule.vhd
+# 27/10/2026  12:48                 0 simon_key_schedule.vhd.bak
+# 27/10/2026  00:24             2.136 simon_round.vhd
+# 27/10/2026  00:21               992 simon_round.vhd.bak
+# 27/10/2026  12:24    <DIR>          simulation
+# 27/10/2026  13:22             2.005 tb_simon_iterative.vhd
+# 27/10/2026  12:49                 0 tb_simon_iterative.vhd.bak
+# 27/10/2026  00:23             1.887 tb_simon_round.vhd
+# 27/10/2026  13:22               941 top_simon.vhd
+# 27/10/2026  13:14                 0 top_simon.vhd.bak
+# 29/08/2026  00:23             1.011 transcript
+# 27/10/2026  13:22           794.624 vsim.wlf
+# 27/10/2026  13:20    <DIR>          work
+#               18 File(s)      1.032.357 bytes
+#                7 Dir(s)  997.730.144.256 bytes free
+vlib work
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+vcom simon_round.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity simon_round
+# -- Compiling architecture Behavioral of simon_round
+vcom simon_key_schedule.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity simon_key_schedule
+# -- Compiling architecture rtl of simon_key_schedule
+vcom simon_iterative.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity simon_iterative
+# -- Compiling architecture rtl of simon_iterative
+# -- Loading entity simon_key_schedule
+# -- Loading entity simon_round
+vcom tb_simon_iterative.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_simon_iterative
+# -- Compiling architecture simulacao of tb_simon_iterative
+# -- Loading package NUMERIC_STD
+# -- Loading entity simon_iterative
+vsim work.tb_simon_iterative
+# vsim work.tb_simon_iterative 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_simon_iterative(simulacao)
+# Loading work.simon_iterative(rtl)
+# Loading work.simon_key_schedule(rtl)
+# Loading work.simon_round(behavioral)
+add wave *
+run -all
+# ** Note: SUCESSO: SIMON-64/128 validado.
+#    Time: 506 ns  Iteration: 0  Instance: /tb_simon_iterative

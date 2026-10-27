@@ -1,0 +1,192 @@
+m255
+K3
+13
+cModel Technology
+Z0 dF:\av1\Projeto-PDII\implementaçao uma rodada de cifra
+Esimon_iterative
+Z1 w1793118138
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dF:\av1\Projeto-PDII\Arquitetura Iterativa
+Z6 8simon_iterative.vhd
+Z7 Fsimon_iterative.vhd
+l0
+L6
+VJCQ=J0ak2HP823aiJ;HPz0
+Z8 OV;C;10.1d;51
+32
+Z9 !s108 1793118245.700000
+Z10 !s90 -reportprogress|300|simon_iterative.vhd|
+Z11 !s107 simon_iterative.vhd|
+o-O0
+Z12 tExplicit 1
+!s100 hl;FSfTkU<5TR4`kX1mdX0
+!i10b 1
+Artl
+Z13 DEx4 work 11 simon_round 0 22 :5kDm;F6L_3aU@0@UJG<I2
+Z14 DEx4 work 18 simon_key_schedule 0 22 LXVXQOn8jLG=K>ZUNnAIo2
+R2
+R3
+R4
+Z15 DEx4 work 15 simon_iterative 0 22 JCQ=J0ak2HP823aiJ;HPz0
+l37
+L19
+V8]49cMFkX2mbC?TLnYl]I3
+R8
+32
+R9
+R10
+R11
+o-O0
+R12
+!s100 izEnI4XB>G]XL=>:8EDGb2
+!i10b 1
+Esimon_key_schedule
+Z16 w1793118130
+R2
+R3
+R4
+R5
+Z17 8simon_key_schedule.vhd
+Z18 Fsimon_key_schedule.vhd
+l0
+L6
+VLXVXQOn8jLG=K>ZUNnAIo2
+R8
+32
+Z19 !s108 1793118245.476000
+Z20 !s90 -reportprogress|300|simon_key_schedule.vhd|
+Z21 !s107 simon_key_schedule.vhd|
+o-O0
+R12
+!s100 ?X]nmGbMo1`hn;=bj9Dkl1
+!i10b 1
+Artl
+R2
+R3
+R4
+R14
+l68
+L20
+V:NgHMNMX:D;EXVj?a=Nlg3
+R8
+32
+R19
+R20
+R21
+o-O0
+R12
+!s100 UHnHPSXKIIg_eS;`aWD4l0
+!i10b 1
+Esimon_round
+Z22 w1793071475
+R2
+R3
+R4
+R5
+Z23 8simon_round.vhd
+Z24 Fsimon_round.vhd
+l0
+L17
+V:5kDm;F6L_3aU@0@UJG<I2
+R8
+32
+Z25 !s108 1793118245.245000
+Z26 !s90 -reportprogress|300|simon_round.vhd|
+Z27 !s107 simon_round.vhd|
+o-O0
+R12
+!s100 G:>kj;GNUPBYKkZSS9gRg3
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+R13
+l53
+L27
+V1e4g2Udi?jPloP:;IIKm?0
+R8
+32
+R25
+R26
+R27
+o-O0
+R12
+!s100 oPNUFJES:[RWHAmHWI4lU3
+!i10b 1
+Etb_simon_iterative
+Z28 w1793118160
+R3
+R4
+R5
+Z29 8tb_simon_iterative.vhd
+Z30 Ftb_simon_iterative.vhd
+l0
+L5
+VM>TU^Hh<cThK]GXzP;X:01
+!s100 ib3mT2clXW763?A[giaK80
+R8
+32
+!i10b 1
+Z31 !s108 1793118245.997000
+Z32 !s90 -reportprogress|300|tb_simon_iterative.vhd|
+Z33 !s107 tb_simon_iterative.vhd|
+o-O0
+R12
+Asimulacao
+R2
+R15
+R3
+R4
+Z34 DEx4 work 18 tb_simon_iterative 0 22 M>TU^Hh<cThK]GXzP;X:01
+l25
+L8
+VGF=9Z9L^;JE[L>nJ7YllD2
+!s100 @=4Ia0gM6CdNLAl`edQ?82
+R8
+32
+!i10b 1
+R31
+R32
+R33
+o-O0
+R12
+Etb_simon_round
+Z35 w1793071421
+R3
+R4
+Z36 dF:\av1\Projeto-PDII\implementaçao uma rodada de cifra
+Z37 8tb_simon_round.vhd
+Z38 Ftb_simon_round.vhd
+l0
+L15
+VcY=aR7ef_oAAAkX3ShFW`1
+R8
+32
+Z39 !s108 1793115448.681000
+Z40 !s90 -reportprogress|300|tb_simon_round.vhd|
+Z41 !s107 tb_simon_round.vhd|
+o-O0
+R12
+!s100 jCW6@GiS]QMFa;UDi5o`C3
+!i10b 1
+Ateste
+R2
+R13
+R3
+R4
+DEx4 work 14 tb_simon_round 0 22 cY=aR7ef_oAAAkX3ShFW`1
+l27
+L18
+V>_L1O:]B?Qe5BizQ5KHV[3
+R8
+32
+R39
+R40
+R41
+o-O0
+R12
+!s100 :gFPf0izT5[mB2l4Ym2>11
+!i10b 1
