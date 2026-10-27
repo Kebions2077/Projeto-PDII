@@ -1,0 +1,93 @@
+# Reading E:/modelsim/modelsim_ase/tcl/vsim/pref.tcl 
+# do SimonFullyUnrolled_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying E:\modelsim\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied E:\modelsim\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {F:/av1/Projeto-PDII/Arquitetura Totalmente Desenrolada/top_simon_fully_unrolled.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity top_simon_fully_unrolled
+# -- Compiling architecture rtl of top_simon_fully_unrolled
+# ** Error: (vcom-11) Could not find work.simon_fully_unrolled.
+# 
+# ** Error: F:/av1/Projeto-PDII/Arquitetura Totalmente Desenrolada/top_simon_fully_unrolled.vhd(27): (vcom-1195) Cannot find expanded name "work.simon_fully_unrolled".
+# 
+# ** Error: F:/av1/Projeto-PDII/Arquitetura Totalmente Desenrolada/top_simon_fully_unrolled.vhd(27): Unknown expanded name.
+# ** Error: F:/av1/Projeto-PDII/Arquitetura Totalmente Desenrolada/top_simon_fully_unrolled.vhd(39): VHDL Compiler exiting
+# ** Error: E:/modelsim/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./SimonFullyUnrolled_run_msim_rtl_vhdl.do line 8
+# E:/modelsim/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {F:/av1/Projeto-PDII/Arquitetura Totalmente Desenrolada/top_simon_fully_unrolled.vhd}"
+cd "F:/av1/Projeto-PDII/SimonFullyUnrolled"
+# couldn't change working directory to "F:/av1/Projeto-PDII/SimonFullyUnrolled": no such file or directory
+cd "F:/av1/Projeto-PDII/Arquitetura Totalmente Desenrolada"
+# reading E:\modelsim\modelsim_ase\win32aloem/../modelsim.ini
+vlib work
+vcom simon_round.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity simon_round
+# -- Compiling architecture rtl of simon_round
+vcom simon_key_schedule.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity simon_key_schedule
+# -- Compiling architecture rtl of simon_key_schedule
+vcom simon_44rounds.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity simon_44rounds
+# -- Compiling architecture structural of simon_44rounds
+# -- Loading package NUMERIC_STD
+# -- Loading entity simon_round
+vcom simon_fully_unrolled.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity simon_fully_unrolled
+# -- Compiling architecture rtl of simon_fully_unrolled
+# -- Loading package NUMERIC_STD
+# -- Loading entity simon_key_schedule
+# -- Loading entity simon_44rounds
+vcom tb_simon_fully_unrolled.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_simon_fully_unrolled
+# -- Compiling architecture simulacao of tb_simon_fully_unrolled
+# -- Loading entity simon_fully_unrolled
+vsim work.tb_simon_fully_unrolled
+# vsim work.tb_simon_fully_unrolled 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_simon_fully_unrolled(simulacao)
+# Loading ieee.numeric_std(body)
+# Loading work.simon_fully_unrolled(rtl)
+# Loading work.simon_key_schedule(rtl)
+# Loading work.simon_44rounds(structural)
+# Loading work.simon_round(rtl)
+add wave *
+run -all
+# ** Note: SUCESSO: SIMON-64/128 totalmente desenrolado validado.
+#    Time: 56 ns  Iteration: 0  Instance: /tb_simon_fully_unrolled
