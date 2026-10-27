@@ -1,0 +1,226 @@
+m255
+K3
+13
+cModel Technology
+Z0 dF:\av1\Projeto-PDII\Arquiteturas\Arquitetura Pipeline
+Esimon_11rounds
+Z1 w1793127780
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dF:\av1\Projeto-PDII\Arquiteturas\Arquitetura Pipeline
+Z5 8simon_11rounds.vhd
+Z6 Fsimon_11rounds.vhd
+l0
+L5
+VVY1n?_M<P5?jEgRZoWV=I0
+Z7 OV;C;10.1d;51
+32
+Z8 !s108 1793128293.850000
+Z9 !s90 -reportprogress|300|simon_11rounds.vhd|
+Z10 !s107 simon_11rounds.vhd|
+o-O0
+Z11 tExplicit 1
+!s100 7kJioh9nHWH]^G@2XRY0G2
+!i10b 1
+Artl
+Z12 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z13 DEx4 work 11 simon_round 0 22 Mz:XMG>cOXeE`Bd<QdiE^1
+R2
+R3
+Z14 DEx4 work 14 simon_11rounds 0 22 VY1n?_M<P5?jEgRZoWV=I0
+l21
+L15
+Vb^eeeo5gkFl@;]S30?igS1
+R7
+32
+R8
+R9
+R10
+o-O0
+R11
+!s100 BHXjfM0S:Uj?PL5jiU^321
+!i10b 1
+Esimon_key_schedule
+Z15 w1793127774
+R12
+R2
+R3
+R4
+Z16 8simon_key_schedule.vhd
+Z17 Fsimon_key_schedule.vhd
+l0
+L6
+VV3abG;haMiP6m2C^m]_2z0
+R7
+32
+Z18 !s108 1793128293.642000
+Z19 !s90 -reportprogress|300|simon_key_schedule.vhd|
+Z20 !s107 simon_key_schedule.vhd|
+o-O0
+R11
+!s100 Eg?YDDfDTRK7^H[:zDaK^3
+!i10b 1
+Artl
+R12
+R2
+R3
+Z21 DEx4 work 18 simon_key_schedule 0 22 V3abG;haMiP6m2C^m]_2z0
+l21
+L13
+VonDU67lj5RCGi^3h6>^]E1
+R7
+32
+R18
+R19
+R20
+o-O0
+R11
+!s100 g]di9dn151_;O=NEhXd563
+!i10b 1
+Esimon_pipeline
+Z22 w1793127789
+R2
+R3
+R4
+Z23 8simon_pipeline.vhd
+Z24 Fsimon_pipeline.vhd
+l0
+L5
+V<f[AbSj>Z7^7M>9U]RYj>3
+R7
+32
+Z25 !s108 1793128294.171000
+Z26 !s90 -reportprogress|300|simon_pipeline.vhd|
+Z27 !s107 simon_pipeline.vhd|
+o-O0
+R11
+!s100 C16zXc:IIJ^X76PF25Gkh3
+!i10b 1
+Artl
+R14
+R12
+R21
+R2
+R3
+Z28 DEx4 work 14 simon_pipeline 0 22 <f[AbSj>Z7^7M>9U]RYj>3
+l33
+L17
+Vn8;?N;i;o:X=ESUc3Vj_Z0
+R7
+32
+R25
+R26
+R27
+o-O0
+R11
+!s100 <lVA6=Kn<]<<?9c[KQ?Y82
+!i10b 1
+Esimon_round
+Z29 w1793127756
+R12
+R2
+R3
+R4
+Z30 8simon_round.vhd
+Z31 Fsimon_round.vhd
+l0
+L6
+VMz:XMG>cOXeE`Bd<QdiE^1
+R7
+32
+Z32 !s108 1793128293.404000
+Z33 !s90 -reportprogress|300|simon_round.vhd|
+Z34 !s107 simon_round.vhd|
+o-O0
+R11
+!s100 z6aWETO5ofmB7SW3h5Pc_3
+!i10b 1
+Artl
+R12
+R2
+R3
+R13
+l21
+L16
+V=Ke9_nca<Z`MJ[VAzlNP[2
+R7
+32
+R32
+R33
+R34
+o-O0
+R11
+!s100 UBdl2GjlU0n<;j<kT[g290
+!i10b 1
+Etb_simon_pipeline
+Z35 w1793127958
+R2
+R3
+R4
+Z36 8tb_simon_pipeline.vhd
+Z37 Ftb_simon_pipeline.vhd
+l0
+L5
+V7gTMb84f^H5k2GFQQ8CFI2
+!s100 m_CZRG4RY`QMAzfkmFQEZ1
+R7
+32
+!i10b 1
+Z38 !s108 1793128294.571000
+Z39 !s90 -reportprogress|300|tb_simon_pipeline.vhd|
+Z40 !s107 tb_simon_pipeline.vhd|
+o-O0
+R11
+Asimulacao
+R28
+R2
+R3
+DEx4 work 17 tb_simon_pipeline 0 22 7gTMb84f^H5k2GFQQ8CFI2
+l21
+L8
+VaTYQCc>l7eVj2Fi<H78TC3
+!s100 kgCXR7MVM?1d>0FJ2HadG2
+R7
+32
+!i10b 1
+R38
+R39
+R40
+o-O0
+R11
+Etop_simon_pipeline
+Z41 w1793127996
+R2
+R3
+R4
+Z42 8top_simon_pipeline.vhd
+Z43 Ftop_simon_pipeline.vhd
+l0
+L5
+VV@T:cGbzJiEI@=FXl]ka@3
+R7
+32
+Z44 !s108 1793128294.387000
+Z45 !s90 -reportprogress|300|top_simon_pipeline.vhd|
+Z46 !s107 top_simon_pipeline.vhd|
+o-O0
+R11
+!s100 _aN85CjD[aY>SAo?9Fji83
+!i10b 1
+Artl
+R28
+R2
+R3
+DEx4 work 18 top_simon_pipeline 0 22 V@T:cGbzJiEI@=FXl]ka@3
+l24
+L14
+VFEzSm[h@ja4VQ8jiLga<<1
+R7
+32
+R44
+R45
+R46
+o-O0
+R11
+!s100 e^?o`2dG3NCH6<hPMa;dm2
+!i10b 1
