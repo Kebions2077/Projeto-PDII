@@ -1,0 +1,41 @@
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity simon_round is
+    Port (
+        x_in  : in  STD_LOGIC_VECTOR(31 downto 0);
+        y_in  : in  STD_LOGIC_VECTOR(31 downto 0);
+        k_in  : in  STD_LOGIC_VECTOR(31 downto 0);
+        x_out : out STD_LOGIC_VECTOR(31 downto 0);
+        y_out : out STD_LOGIC_VECTOR(31 downto 0)
+    );
+end simon_round;
+
+architecture Behavioral of simon_round is
+
+    function rotl32(
+        x : STD_LOGIC_VECTOR(31 downto 0);
+        n : natural
+    ) return STD_LOGIC_VECTOR is
+    begin
+        return std_logic_vector(
+            rotate_left(unsigned(x), n)
+        );
+    end function;
+
+    function simon_f(
+        x : STD_LOGIC_VECTOR(31 downto 0)
+    ) return STD_LOGIC_VECTOR is
+    begin
+        return (rotl32(x, 1) and rotl32(x, 8))
+               xor rotl32(x, 2);
+    end function;
+
+begin
+
+    x_out <= y_in xor simon_f(x_in) xor k_in;
+    y_out <= x_in;
+
+end Behavioral;
