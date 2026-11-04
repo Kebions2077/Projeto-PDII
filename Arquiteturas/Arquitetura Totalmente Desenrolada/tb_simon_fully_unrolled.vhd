@@ -1,4 +1,3 @@
-
 library ieee;
 use ieee.std_logic_1164.all;
 
@@ -20,13 +19,14 @@ architecture simulacao of tb_simon_fully_unrolled is
     signal ciphertext : std_logic_vector(63 downto 0);
     signal busy : std_logic;
     signal done : std_logic;
+    signal finished : boolean := false;
 
     constant EXPECTED : std_logic_vector(63 downto 0) :=
         x"44C8FC20B9DFA07A";
 
 begin
 
-    clk <= not clk after 5 ns;
+    clk <= not clk after 5 ns when not finished else '0';
 
     DUT : entity work.simon_fully_unrolled(rtl)
         port map (
@@ -65,6 +65,7 @@ begin
         report "SUCESSO: SIMON-64/128 totalmente desenrolado validado."
             severity note;
 
+        finished <= true;
         wait;
 
     end process;
