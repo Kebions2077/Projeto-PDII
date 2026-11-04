@@ -57,12 +57,9 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name VHDL_FILE top_simon.vhd
-set_global_assignment -name VHDL_FILE tb_simon_iterative.vhd
 set_global_assignment -name VHDL_FILE simon_key_schedule.vhd
 set_global_assignment -name VHDL_FILE simon_iterative.vhd
-set_global_assignment -name VHDL_FILE Simon_Round.vhd
 set_global_assignment -name VHDL_FILE simon_round.vhd
-set_global_assignment -name VHDL_FILE tb_simon_round.vhd
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
@@ -71,3 +68,4 @@ set_instance_assignment -name VIRTUAL_PIN ON -to plaintext[*]
 set_instance_assignment -name VIRTUAL_PIN ON -to master_key[*]
 set_instance_assignment -name VIRTUAL_PIN ON -to ciphertext[*]
 set_global_assignment -name SDC_FILE constraints.sdc
+set_global_assignment -name AUTO_SHIFT_REGISTER_RECOGNITION OFF
